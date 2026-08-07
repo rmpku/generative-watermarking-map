@@ -24,12 +24,13 @@ const I18N = {
     allStatuses: "All statuses",
     allLoci: "All watermark loci",
     allMedia: "Image + video",
-    tableLegend: "official + third-party + source unspecified = public code · no-code rows are separate",
+    tableLegend: "official + third-party + source unspecified = public code · Google Scholar citations refresh weekly",
     thYear: "Year",
     thPaper: "Paper / authors",
     thVenue: "Venue",
     thInstitution: "First institution",
     thCode: "Code",
+    thCitations: "GS citations",
     emptyState: "No records match this query.",
     statsCaption: "Automatically generated from the paper index.",
     yearChartTitle: "Papers by year",
@@ -69,12 +70,13 @@ const I18N = {
     allStatuses: "全部状态",
     allLoci: "全部水印位置",
     allMedia: "图像 + 视频",
-    tableLegend: "官方 + 第三方 + 来源未说明 = 公开代码 · 无代码单独统计",
+    tableLegend: "官方 + 第三方 + 来源未说明 = 公开代码 · Google Scholar 引用数每周更新",
     thYear: "年份",
     thPaper: "论文 / 作者",
     thVenue: "发表 venue",
     thInstitution: "第一单位",
     thCode: "代码",
+    thCitations: "GS 引用数",
     emptyState: "没有符合条件的记录。",
     statsCaption: "根据论文索引自动生成。",
     yearChartTitle: "按年份统计",
@@ -190,12 +192,20 @@ function renderPapers() {
     const title = paperHref ? `<a href="${paperHref}" target="_blank" rel="noreferrer">${escapeHTML(paper.title)} ${paperMarker}</a>` : escapeHTML(paper.title);
     const authors = paper.authors.length > 2 ? `${paper.authors.slice(0, 2).join(", ")} +${paper.authors.length - 2}` : paper.authors.join(", ");
     const codeHref = safeHref(paper.codeLink);
+    const hasCitationCount = paper.scholarCitations !== null && paper.scholarCitations !== undefined && paper.scholarCitations !== "" && Number.isFinite(Number(paper.scholarCitations));
+    const citationLabel = hasCitationCount ? formatNumber(Number(paper.scholarCitations)) : "—";
+    const citationDate = paper.scholarCitationsUpdatedAt ? "Google Scholar snapshot: " + paper.scholarCitationsUpdatedAt : "Google Scholar citation count not checked";
+    const citationHref = safeHref(paper.scholarCitationsLink);
+    const citationMarkup = citationHref
+      ? "<a class=\"citation-value\" href=\"" + citationHref + "\" target=\"_blank\" rel=\"noreferrer\">" + citationLabel + "<span class=\"citation-arrow\" aria-hidden=\"true\">↗</span></a>"
+      : "<span class=\"citation-value\">" + citationLabel + "</span>";
     return `<tr>
       <td class="year-cell">${escapeHTML(paper.year || "—")}</td>
       <td><div class="paper-title">${title}</div><div class="paper-authors">${escapeHTML(authors)}</div><div class="paper-tags"><span class="paper-tag">${escapeHTML(paper.modality)}</span><span class="paper-tag">${escapeHTML(paper.locus)}</span></div></td>
       <td class="venue-cell" title="${escapeHTML(paper.venue)}">${escapeHTML(compactVenue(paper.venue))}</td>
       <td class="unit-cell">${escapeHTML(paper.firstInstitution === "Unverified" ? t("unverified") : paper.firstInstitution)}<span class="country-label">${escapeHTML(countryLabel(paper.firstCountry))}</span></td>
       <td class="code-cell"><span class="status-pill ${codeClass(paper.codeStatus)}">${escapeHTML(codeLabel(paper.codeStatus))}</span>${codeHref ? `<a class="code-link" href="${codeHref}" target="_blank" rel="noreferrer"><span>repo</span><span class="code-link-arrow" aria-hidden="true">↗</span></a>` : ""}</td>
+      <td class="citation-cell" title="${escapeHTML(citationDate)}">${citationMarkup}</td>
     </tr>`;
   }).join("");
   $("#emptyState").hidden = results.length !== 0;
@@ -250,7 +260,7 @@ async function init() {
     papers = await response.json();
     applyLanguage();
   } catch (error) {
-    $("#papersBody").innerHTML = `<tr><td colspan="5" class="empty-state">Data load failed: ${escapeHTML(error.message)}</td></tr>`;
+    $("#papersBody").innerHTML = `<tr><td colspan="6" class="empty-state">Data load failed: ${escapeHTML(error.message)}</td></tr>`;
   }
 }
 

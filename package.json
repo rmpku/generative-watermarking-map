@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "import-bib": "node scripts/import-bib.mjs data/papers.json",
-    "generate-stats": "node scripts/generate-stats.mjs"
+    "generate-stats": "node scripts/generate-stats.mjs",
+    "update-scholar-citations": "node scripts/update-scholar-citations.mjs"
   }
 }

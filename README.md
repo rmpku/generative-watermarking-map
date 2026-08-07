@@ -50,6 +50,27 @@ The root `index.html` is GitHub Pages compatible and has no runtime dependency.
 
 The default interface is English. Use the `中文` toggle in the header to switch the interface language. Paper titles, authors, venues, and institution names remain in their original English form.
 
+## Google Scholar citations
+
+The paper table includes a Google Scholar citation snapshot. Each matched count stores the
+date it was checked and links to the corresponding Google Scholar cited-by page. Citation
+counts can change in either direction as Scholar merges or removes indexed versions; this is
+why the table treats them as dated snapshots.
+
+The weekly workflow uses [SerpApi's Google Scholar API](https://serpapi.com/google-scholar-api)
+because Google Scholar does not provide a stable public API. To enable it:
+
+1. Create a SerpApi account and copy the API key.
+2. Add a repository Actions secret named `SERPAPI_API_KEY`.
+3. Run **Update Google Scholar citations** once from the Actions tab; it then runs every Monday at 03:17 UTC.
+
+The key is only read by GitHub Actions and is never stored in the repository. To initialize
+the citation fields without querying Scholar locally:
+
+```bash
+node scripts/update-scholar-citations.mjs --init
+```
+
 ## Contributing
 
-When adding a record, preserve the BibTeX key, use one row per research work, link the paper and code, and record whether the code is official, third-party, or source-unspecified. Do not infer provenance from a title match alone; use `unverified` until the repository content and provenance are checked.
+When adding a record, preserve the BibTeX key, use one row per research work, link the paper and code, and record whether the code is official, third-party, or source-unspecified. A title match can be recorded as `source_unspecified` when the repository matches the paper but its provenance is not stated; reserve `none_found` for papers with no matching public implementation.
