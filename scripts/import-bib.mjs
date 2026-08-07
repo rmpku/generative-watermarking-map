@@ -2,6 +2,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 
 const source = readFileSync(0, "utf8");
 const outputPath = process.argv[2] || "data/papers.json";
+const codeReview = JSON.parse(readFileSync(new URL("../data/code-review.json", import.meta.url), "utf8"));
 
 const CORE_KEYS = [
   "Wen2023", "Fernandez2023", "Yang2024", "Min2024",
@@ -160,6 +161,7 @@ const papers = CORE_KEYS
     const title = field(entry.body, "title");
     const authors = parseAuthors(field(entry.body, "author"));
     const override = OVERRIDES[key] || {};
+    const reviewedCode = codeReview.records[key.toLowerCase()] || {};
     return {
       id: key.toLowerCase(),
       bibKey: key,
@@ -172,13 +174,13 @@ const papers = CORE_KEYS
       paperSearchLink: `https://arxiv.org/search/?query=${encodeURIComponent(title)}&searchtype=title&abstracts=show&order=-announced_date_first&size=50`,
       firstInstitution: override.firstInstitution || "Unverified",
       firstCountry: override.firstCountry || "Unverified",
-      codeStatus: override.codeStatus || "unverified",
-      codeLink: override.codeLink || "",
+      codeStatus: reviewedCode.codeStatus ?? override.codeStatus ?? "unverified",
+      codeLink: reviewedCode.codeLink ?? override.codeLink ?? "",
       modality: VIDEO_KEYS.has(key) ? "video" : "image",
       locus: LOCUS.get(key) || "Other",
       inCore: true,
       source: "survey references.bib",
-      lastVerified: override.codeStatus || override.firstInstitution ? "2026-08-07" : null
+      lastVerified: reviewedCode.codeStatus ? codeReview.reviewedAt : (override.codeStatus || override.firstInstitution ? "2026-08-07" : null)
     };
   })
   .sort((a, b) => (b.year || 0) - (a.year || 0) || a.title.localeCompare(b.title));

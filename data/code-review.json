@@ -1,0 +1,331 @@
+{
+  "reviewedAt": "2026-08-07",
+  "rule": "A live public implementation is required. Author/project code is official; a credible implementation maintained by another group is third-party; code coming soon, broken or unlocatable links, request-code pages, and no-public-repository cases are none_found.",
+  "records": {
+    "flexiblewm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "aeon2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "awmamoe2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "diffkgw2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "diffw2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "gshannon2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/Rambo-Yi/Gaussian-Shannon"
+    },
+    "genptw2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "affineflow2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "latentsinv2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "luminark2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "optmark2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "rain2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "ringet2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "ecckyber2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "rwp2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "tdmow2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "serum2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/Hubizon/SERUM"
+    },
+    "skeda2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "slice2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "slim2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "spdmark2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "sphericalwm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "ppgs2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "diffmark2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "gnm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "fernandez2023undetectable": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/XuandongZhao/PRC-Watermark"
+    },
+    "dgs2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "dprw2024": {
+      "codeStatus": "third_party",
+      "codeLink": "https://comfy.icu/extension/lthero-big__Comfyui-DPRWatermark"
+    },
+    "dtr2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "dvw2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "dynamicwm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "yang2024gaussianshadingpp": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "guidancewm2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/EnoalG/Guidance-Watermarking-for-Diffusion-Models"
+    },
+    "hitn2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/Kasraarabi/Hidden-in-the-Noise"
+    },
+    "phasewm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "i2vwm2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/MrCrims/I2VWM-Robust-Watermarking-for-Image-to-Video-Generation"
+    },
+    "gwi2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "svs2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "tjig2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "wdp2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "ldrovis2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/xiangkun1999/LD-RoViS"
+    },
+    "markplugger2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "maxsive2024": {
+      "codeStatus": "third_party",
+      "codeLink": "https://github.com/ispras/wibe"
+    },
+    "mddm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "noiseprints2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/nirgoren/NoisePrints"
+    },
+    "rwmdm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "stdmlatent2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "fedwm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "vine2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/Shilin-LU/VINE"
+    },
+    "safesora2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/Sugewud/Safe-Sora"
+    },
+    "satldm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "shallowdiffuse2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/liwd190019/Shallow-Diffuse"
+    },
+    "stableguard2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/Harxis/StableGuard"
+    },
+    "swaldm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "t2smark2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/0xD009/T2SMark"
+    },
+    "tagwm2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/Suchenl/TAG-WM"
+    },
+    "videosignature2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/hardenyu21/Video-Signature"
+    },
+    "vidstamp2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/SPIN-UMass/VidStamp"
+    },
+    "waterflow2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "wam2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/facebookresearch/watermark-anything"
+    },
+    "dcw2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "wmadapter2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/showlab/WMAdapter"
+    },
+    "min2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/rmin2000/WaDiff"
+    },
+    "ewlora2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/MrDongdongLin/EW-LoRA"
+    },
+    "aqualora2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "zodiac2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/zhanglijun95/ZoDiac"
+    },
+    "cluemark2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "diffusetrace2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "fsemw2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "lawa2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "lvmark2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "metr2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/deepvk/metr"
+    },
+    "promark2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "safesd2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "supermark2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "videoseal2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/facebookresearch/videoseal"
+    },
+    "wfsdm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "conceptwm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "wouaf2024": {
+      "codeStatus": "official",
+      "codeLink": "https://github.com/kylemin/WOUAF"
+    },
+    "fsw2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    },
+    "liuwdm2024": {
+      "codeStatus": "none_found",
+      "codeLink": ""
+    }
+  }
+}
+

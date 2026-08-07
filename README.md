@@ -22,6 +22,11 @@ Public code includes both official author implementations and credible third-par
 - `unverified` — internal pending-review state; it is not counted as `none_found`;
 - `none_found` — checked, but no public implementation was found.
 
+The 2026-08-07 audit covers all 94 core rows. A live public implementation is required;
+code marked “coming soon”, broken or unlocatable links, request-code pages, and cases with
+no public repository are recorded as `none_found`. The decision record is kept in
+`data/code-review.json`.
+
 ## Data flow
 
 `data/papers.json` is the source of truth for the static page. The browser computes the visible paper filters and summary charts from that file. The Node scripts are dependency-free:
@@ -32,6 +37,9 @@ unzip -p /path/to/survey.zip 'references.bib' | node scripts/import-bib.mjs data
 
 # Generate a machine-readable statistics snapshot.
 node scripts/generate-stats.mjs
+
+# Apply the latest reviewed code-status decisions to the paper database.
+node scripts/apply-code-review.mjs
 ```
 
 The root `index.html` is GitHub Pages compatible and has no runtime dependency.

@@ -15,13 +15,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=A%20Flexible%20and%20Lightweight%20Watermarking%20Framework%20for%20Stable%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "aeon2024",
@@ -38,13 +38,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=AEON%3A%20Adaptive%20Embedding%20Optimized%20Noise%20for%20Robust%20Watermarking%20in%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "awmamoe2024",
@@ -65,13 +65,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=AWMA-MoE%3A%20Attention-Guided%20Watermark%20Adapter%20with%20MoE%20for%20Latent%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "diffkgw2024",
@@ -103,13 +103,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=DiffKGW%3A%20Stealthy%20and%20Robust%20Diffusion%20Model%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "diffw2024",
@@ -131,13 +131,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=DiffW%3A%20Multi-Encoder%20Based%20on%20Conditional%20Diffusion%20Model%20for%20Robust%20Image%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "gshannon2024",
@@ -155,13 +155,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Gaussian%20Shannon%3A%20High-Precision%20Diffusion%20Model%20Watermarking%20Based%20on%20Communication&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/Rambo-Yi/Gaussian-Shannon",
     "modality": "image",
     "locus": "Initial noise",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "genptw2024",
@@ -183,13 +183,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=GenPTW%3A%20Latent%20Image%20Watermarking%20for%20Provenance%20Tracing%20and%20Tamper%20Localization&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "affineflow2024",
@@ -208,13 +208,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Large-Scale%20Traceable%20and%20Robust%20Watermarking%20for%20Diffusion%20Models%20with%20Precise%20Affine%20Coupling%20Flow%20Encoding&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "latentsinv2024",
@@ -233,13 +233,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Latents-Inv%3A%20Robust%20Semantic%20Watermark%20with%20Key-Assisted%20Recovery%20for%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "luminark2024",
@@ -261,13 +261,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Luminark%3A%20Training-Free%2C%20Probabilistically-Certified%20Watermarking%20for%20General%20Vision%20Generative%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Trajectory",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "optmark2024",
@@ -288,13 +288,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=OptMark%3A%20Robust%20Multi-Bit%20Diffusion%20Watermarking%20via%20Inference-Time%20Optimization&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Hybrid",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "rain2024",
@@ -316,13 +316,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=RAIN%3A%20Redundancy-Aware%20Latent%20Injection%20for%20Quality-Preserving%20Image%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Latent",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "ringet2024",
@@ -342,13 +342,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=RINGet%3A%20A%20Robust%20Watermarking%20Framework%20for%20Diffusion-Based%20Video%20Generation&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "ecckyber2024",
@@ -369,13 +369,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Robust%20Watermarking%20for%20Diffusion%20Models%20Using%20Error-Correcting%20Codes%20and%20Post-Quantum%20Key%20Encapsulation&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "rwp2024",
@@ -395,13 +395,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=RWP%3A%20A%20Robust%20Watermarking%20Plugin%20for%20Attribution%20and%20Protection%20in%20Stable%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "tdmow2024",
@@ -419,13 +419,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Scalable%20and%20Robust%20Watermarking%20for%20Diffusion%20Models%20via%20Task-Decoupled%20Mixture-of-Watermarks&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "serum2024",
@@ -447,13 +447,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=SERUM%3A%20Simple%2C%20Efficient%2C%20Robust%2C%20and%20Unifying%20Marking%20for%20Diffusion-Based%20Image%20Generation&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/Hubizon/SERUM",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "sigmark2024",
@@ -502,13 +502,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=SKeDA%3A%20A%20Generative%20Watermarking%20Framework%20for%20Text-to-Video%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "slice2024",
@@ -530,13 +530,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=SLICE%3A%20Semantic%20Latent%20Injection%20via%20Compartmentalized%20Embedding%20for%20Image%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "slim2024",
@@ -558,13 +558,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=SLIM%3A%20Stable%20Latent%20Integration%20for%20Robust%20Watermark%20in%20Diffusion%20Model&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "spdmark2024",
@@ -582,13 +582,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=SPDMark%3A%20Selective%20Parameter%20Displacement%20for%20Robust%20Video%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "sphericalwm2024",
@@ -609,13 +609,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Spherical%20Watermark%3A%20Encryption-Free%2C%20Lossless%20Watermarking%20for%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "ppgs2024",
@@ -632,13 +632,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Towards%20Provenance-Aware%20Diffusion%3A%20Key-Free%20Watermarking%20with%20Gaussian%20Shading&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "diffmark2024",
@@ -657,13 +657,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Transferable%20Multi-Bit%20Watermarking%20Across%20Frozen%20Diffusion%20Models%20via%20Latent%20Consistency%20Bridges&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "gnm2024",
@@ -680,13 +680,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Watermarking%20via%20Gaussian%20Noise%20Modulation%20in%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "fernandez2023undetectable",
@@ -704,13 +704,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=An%20Undetectable%20Watermark%20for%20Generative%20Image%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/XuandongZhao/PRC-Watermark",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "dgs2024",
@@ -727,13 +727,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=DGS%3A%20Robust%20and%20Diverse%20Watermarks%20for%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "dprw2024",
@@ -752,13 +752,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Diversity-Preserving%20Robust%20Watermarking%20for%20Diffusion%20Model%20Generated%20Images&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "third_party",
+    "codeLink": "https://comfy.icu/extension/lthero-big__Comfyui-DPRWatermark",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "dtr2024",
@@ -778,13 +778,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=DTR%3A%20Dynamic%20Tree-Ring%20Watermarking%20Framework%20for%20Diffusion-Based%20Video%20Generation&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "dvw2024",
@@ -806,13 +806,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=DVW%3A%20Diffusion%20Visible%20Watermark&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "dynamicwm2024",
@@ -832,13 +832,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Dynamic%20Watermarks%20in%20Images%20Generated%20by%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "yang2024gaussianshadingpp",
@@ -861,13 +861,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Gaussian%20Shading%2B%2B%3A%20Rethinking%20the%20Realistic%20Deployment%20Challenge%20of%20Performance-Lossless%20Image%20Watermark%20for%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Initial noise",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "gaussmarker2024",
@@ -911,13 +911,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Guidance%20Watermarking%20for%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/EnoalG/Guidance-Watermarking-for-Diffusion-Models",
     "modality": "image",
     "locus": "Trajectory",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "hitn2024",
@@ -937,13 +937,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Hidden%20in%20the%20Noise%3A%20Two-Stage%20Robust%20Watermarking%20for%20Images&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/Kasraarabi/Hidden-in-the-Noise",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "phasewm2024",
@@ -964,13 +964,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Hiding%20in%20the%20Phase%3A%20A%20Provably%20Robust%20Watermark%20for%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "i2vwm2024",
@@ -989,13 +989,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=I2VWM%3A%20Robust%20Watermarking%20for%20Image-to-Video%20Generation&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/MrCrims/I2VWM-Robust-Watermarking-for-Image-to-Video-Generation",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "gwi2024",
@@ -1015,13 +1015,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Image%20Watermarking%20of%20Generative%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "svs2024",
@@ -1046,13 +1046,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Implanting%20Robust%20Watermarks%20in%20Latent%20Diffusion%20Models%20for%20Video%20Generation&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "tjig2024",
@@ -1073,13 +1073,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=In-Generation%20Watermarking%20for%20Latent%20Diffusion%20Models%3A%20A%20Perceptual%20Guidance%20Mechanism%20via%20Texture%20and%20JND&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "wdp2024",
@@ -1098,13 +1098,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Intellectual%20Property%20Protection%20of%20Diffusion%20Models%20via%20the%20Watermark%20Diffusion%20Process&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "latentwatermark2024",
@@ -1148,13 +1148,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=LD-RoViS%3A%20Training-Free%20Robust%20Video%20Steganography%20for%20Deterministic%20Latent%20Diffusion%20Model&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/xiangkun1999/LD-RoViS",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "markplugger2024",
@@ -1173,13 +1173,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=MarkPlugger%3A%20Generalizable%20Watermark%20Framework%20for%20Latent%20Diffusion%20Models%20Without%20Retraining&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Latent",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "maxsive2024",
@@ -1197,13 +1197,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=MaXsive%3A%20High-Capacity%20and%20Robust%20Training-Free%20Generative%20Image%20Watermarking%20in%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "third_party",
+    "codeLink": "https://github.com/ispras/wibe",
     "modality": "image",
     "locus": "Hybrid",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "mddm2024",
@@ -1222,13 +1222,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=MDDM%3A%20Practical%20Message-Driven%20Generative%20Image%20Steganography%20Based%20on%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "noiseprints2024",
@@ -1249,13 +1249,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=NOISEPRINTS%3A%20Distortion-Free%20Watermarks%20for%20Authorship%20in%20Private%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/nirgoren/NoisePrints",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "rwmdm2024",
@@ -1273,13 +1273,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Robust%20Watermarking%20for%20Diffusion%20Model%20Generated%20Images&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "stdmlatent2024",
@@ -1300,13 +1300,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Robust%20Watermarking%20for%20Diffusion%20Models%20Based%20on%20STDM%20and%20Latent%20Space%20Fine-Tuning&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "fedwm2024",
@@ -1328,13 +1328,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Robust%20Watermarking%20for%20Federated%20Diffusion%20Models%20with%20Unlearning-Enhanced%20Redundancy&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "vine2024",
@@ -1354,13 +1354,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Robust%20Watermarking%20Using%20Generative%20Priors%20Against%20Image%20Editing%3A%20From%20Benchmarking%20to%20Advances&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/Shilin-LU/VINE",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "safesora2024",
@@ -1384,13 +1384,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Safe-Sora%3A%20Safe%20Text-to-Video%20Generation%20via%20Graphical%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/Sugewud/Safe-Sora",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "satldm2024",
@@ -1407,13 +1407,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=SAT-LDM%3A%20Provably%20Generalizable%20Image%20Watermarking%20for%20Latent%20Diffusion%20Models%20with%20Self-Augmented%20Training&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "seal2024",
@@ -1479,13 +1479,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Shallow%20Diffuse%3A%20Robust%20and%20Invisible%20Watermarking%20through%20Low-Dim%20Subspaces%20in%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/liwd190019/Shallow-Diffuse",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "stableguard2024",
@@ -1508,13 +1508,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=StableGuard%3A%20Towards%20Unified%20Copyright%20Protection%20and%20Tamper%20Localization%20in%20Latent%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/Harxis/StableGuard",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "swaldm2024",
@@ -1534,13 +1534,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=SWA-LDM%3A%20Toward%20Stealthy%20Watermarks%20for%20Latent%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "t2smark2024",
@@ -1560,13 +1560,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=T2SMark%3A%20Balancing%20Robustness%20and%20Diversity%20in%20Noise-as-Watermark%20for%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/0xD009/T2SMark",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "tagwm2024",
@@ -1586,13 +1586,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=TAG-WM%3A%20Tamper-Aware%20Generative%20Image%20Watermarking%20via%20Diffusion%20Inversion%20Sensitivity&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/Suchenl/TAG-WM",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "videosignature2024",
@@ -1613,13 +1613,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Video%20Signature%3A%20In-generation%20Watermarking%20for%20Latent%20Video%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/hardenyu21/Video-Signature",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "videomark2024",
@@ -1694,13 +1694,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=VIDSTAMP%3A%20A%20Temporally-Aware%20Watermark%20for%20Ownership%20and%20Integrity%20in%20Video%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/SPIN-UMass/VidStamp",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "waterflow2024",
@@ -1721,13 +1721,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=WaterFlow%3A%20Learning%20Fast%20and%20Robust%20Watermarks%20using%20Stable%20Diffusion&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "wam2024",
@@ -1747,13 +1747,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Watermark%20Anything%20with%20Localized%20Messages&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/facebookresearch/watermark-anything",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "dcw2024",
@@ -1770,13 +1770,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Watermarking%20Diffusion%20Models%20by%20Constructing%20Generative%20Classifiers&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "wmadapter2024",
@@ -1796,13 +1796,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=WMAdapter%3A%20Adding%20WaterMark%20Control%20to%20Latent%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/showlab/WMAdapter",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "min2024",
@@ -1821,13 +1821,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=A%20Watermark-Conditioned%20Diffusion%20Model%20for%20IP%20Protection&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/rmin2000/WaDiff",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "ewlora2024",
@@ -1848,13 +1848,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=An%20Efficient%20Watermarking%20Method%20for%20Latent%20Diffusion%20Models%20via%20Low-Rank%20Adaptation%20and%20Dynamic%20Loss%20Weighting&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/MrDongdongLin/EW-LoRA",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "aqualora2024",
@@ -1878,13 +1878,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=AquaLoRA%3A%20Toward%20White-Box%20Protection%20for%20Customized%20Stable%20Diffusion%20Models%20via%20Watermark%20LoRA&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "zodiac2024",
@@ -1905,13 +1905,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Attack-Resilient%20Image%20Watermarking%20Using%20Stable%20Diffusion&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/zhanglijun95/ZoDiac",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "cluemark2024",
@@ -1929,13 +1929,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=CLUE-Mark%3A%20Watermarking%20Diffusion%20Models%20using%20CLWE&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Initial noise",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "diffusetrace2024",
@@ -1954,13 +1954,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=DiffuseTrace%3A%20A%20Transparent%20and%20Flexible%20Watermarking%20Scheme%20for%20Latent%20Diffusion%20Model&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Latent",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "fsemw2024",
@@ -1981,13 +1981,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Flexible%20Semantic%20Watermarking%20for%20Robust%20Diffusion%20Model%20Detection%20and%20Tracing&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "yang2024",
@@ -2034,13 +2034,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=LaWa%3A%20Using%20Latent%20Space%20for%20In-Generation%20Image%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Latent",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "lvmark2024",
@@ -2062,13 +2062,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=LVMark%3A%20Robust%20Watermark%20for%20Latent%20Video%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "metr2024",
@@ -2086,13 +2086,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=METR%3A%20Image%20Watermarking%20with%20Large%20Number%20of%20Unique%20Messages&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/deepvk/metr",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "promark2024",
@@ -2112,13 +2112,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=ProMark%3A%20Proactive%20Diffusion%20Watermarking%20for%20Causal%20Attribution&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "ringid2024",
@@ -2186,13 +2186,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Safe-SD%3A%20Safe%20and%20Traceable%20Stable%20Diffusion%20with%20Text%20Prompt%20Trigger%20for%20Invisible%20Generative%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "supermark2024",
@@ -2214,13 +2214,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=SUPERMARK%3A%20Robust%20and%20Training-Free%20Image%20Watermarking%20via%20Diffusion-Based%20Super-Resolution&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "videoseal2024",
@@ -2239,13 +2239,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Video%20Seal%3A%20Open%20and%20Efficient%20Video%20Watermarking&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/facebookresearch/videoseal",
     "modality": "video",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "wfsdm2024",
@@ -2264,13 +2264,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Watermarking%20for%20Stable%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "conceptwm2024",
@@ -2290,13 +2290,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Watermarking%20Visual%20Concepts%20for%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "wouaf2024",
@@ -2316,13 +2316,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=WOUAF%3A%20Weight%20Modulation%20for%20User%20Attribution%20and%20Fingerprinting%20in%20Text-to-Image%20Diffusion%20Models&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
-    "codeLink": "",
+    "codeStatus": "official",
+    "codeLink": "https://github.com/kylemin/WOUAF",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "recipe2024",
@@ -2368,13 +2368,13 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Flexible%20and%20Secure%20Watermarking%20for%20Latent%20Diffusion%20Model&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Latent",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   },
   {
     "id": "fernandez2023",
@@ -2445,12 +2445,12 @@
     "paperSearchLink": "https://arxiv.org/search/?query=Watermarking%20Diffusion%20Model&searchtype=title&abstracts=show&order=-announced_date_first&size=50",
     "firstInstitution": "Unverified",
     "firstCountry": "Unverified",
-    "codeStatus": "unverified",
+    "codeStatus": "none_found",
     "codeLink": "",
     "modality": "image",
     "locus": "Other",
     "inCore": true,
     "source": "survey references.bib",
-    "lastVerified": null
+    "lastVerified": "2026-08-07"
   }
 ]
