@@ -209,6 +209,7 @@ h2 { margin-bottom: 0; font: 500 clamp(28px, 4vw, 45px)/1 var(--mono); letter-sp
 .status-pill { display: inline-flex; align-items: center; width: fit-content; padding: 4px 7px; border: 1px solid var(--line-bright); font: 9px var(--mono); white-space: nowrap; }
 .status-official { color: var(--green); border-color: rgba(8, 116, 67, 0.35); background: rgba(8, 116, 67, 0.06); }
 .status-third-party { color: var(--cyan); border-color: rgba(8, 114, 122, 0.35); background: rgba(8, 114, 122, 0.05); }
+.status-source-unspecified { color: #7654a5; border-color: rgba(118, 84, 165, 0.35); background: #f6f0ff; }
 .status-unverified { color: #976412; border-color: rgba(151, 100, 18, 0.3); background: #fff8e8; }
 .status-none { color: var(--red); border-color: rgba(179, 49, 49, 0.3); background: #fff1f1; }
 .empty-state { padding: 50px; color: var(--muted); text-align: center; font-family: var(--mono); }

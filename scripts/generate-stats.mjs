@@ -3,7 +3,7 @@ import { readFileSync, writeFileSync, mkdirSync } from "node:fs";
 const input = process.argv[2] || "data/papers.json";
 const output = process.argv[3] || "data/stats.json";
 const papers = JSON.parse(readFileSync(input, "utf8"));
-const publicCodeStatuses = new Set(["official", "third_party"]);
+const publicCodeStatuses = new Set(["official", "third_party", "source_unspecified"]);
 
 const compactVenue = (venue = "") => venue
   .replace(/^Proceedings of the /, "")

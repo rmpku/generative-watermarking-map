@@ -1,4 +1,4 @@
-# generative-watermarking-map
+# Generative-Watermarking-Map
 
 > A living literature map of blind generative watermarking for diffusion models.
 
@@ -15,16 +15,18 @@ This project indexes the core method papers collected in the survey
 
 ## Code status
 
-Public code includes both official author implementations and credible third-party implementations. The map keeps the distinction visible:
+Public code includes official, third-party, and source-unspecified implementations. The map keeps the distinction visible:
 
-- `official` — public code from the paper authors or their project page;
-- `third_party` — a public implementation maintained by another group;
+- `official` — public code explicitly released by the paper authors or their project page;
+- `third_party` — a public implementation explicitly identified as independent or maintained by another group;
+- `source_unspecified` — the repository content matches the paper, but its official/third-party provenance is not stated;
 - `unverified` — internal pending-review state; it is not counted as `none_found`;
 - `none_found` — checked, but no public implementation was found.
 
-The 2026-08-07 audit covers all 94 core rows. A live public implementation is required;
-code marked “coming soon”, broken or unlocatable links, request-code pages, and cases with
-no public repository are recorded as `none_found`. The decision record is kept in
+The 2026-08-07 audit covers all 94 core rows. A repository is counted only when its code and
+documentation correspond to the paper; a title match alone is insufficient. Code marked
+“coming soon”, broken or unlocatable links, request-code pages, and cases with no public
+repository are recorded as `none_found`. The decision record is kept in
 `data/code-review.json`.
 
 ## Data flow
@@ -50,4 +52,4 @@ The default interface is English. Use the `中文` toggle in the header to switc
 
 ## Contributing
 
-When adding a record, preserve the BibTeX key, use one row per research work, link the paper and code, and record whether the code is official or third-party. Do not guess missing affiliations or repositories; use `unverified` until checked.
+When adding a record, preserve the BibTeX key, use one row per research work, link the paper and code, and record whether the code is official, third-party, or source-unspecified. Do not infer provenance from a title match alone; use `unverified` until the repository content and provenance are checked.

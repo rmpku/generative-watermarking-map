@@ -1,8 +1,8 @@
 {
-  "generatedAt": "2026-08-07T09:51:24.233Z",
+  "generatedAt": "2026-08-07T10:05:47.665Z",
   "totalPapers": 94,
-  "publicCodePapers": 39,
-  "publicCodeRatio": 0.4148936170212766,
+  "publicCodePapers": 40,
+  "publicCodeRatio": 0.425531914893617,
   "officialCodePapers": 32,
   "thirdPartyCodePapers": 7,
   "metadataCoverage": {
@@ -60,9 +60,10 @@
     "Web Information Systems Engineering -- WISE 2024": 1
   },
   "byCodeStatus": {
-    "none_found": 55,
+    "none_found": 54,
     "official": 32,
-    "third_party": 7
+    "third_party": 7,
+    "source_unspecified": 1
   },
   "byModality": {
     "image": 79,

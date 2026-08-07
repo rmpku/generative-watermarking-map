@@ -1,6 +1,6 @@
 {
   "reviewedAt": "2026-08-07",
-  "rule": "A live public implementation is required. Author/project code is official; a credible implementation maintained by another group is third-party; code coming soon, broken or unlocatable links, request-code pages, and no-public-repository cases are none_found.",
+  "rule": "A repository is counted only when its contents and documentation correspond to the paper's method. Explicit author/project implementations are official; explicitly identified independent implementations are third-party; a matching repository whose provenance is not stated is source_unspecified; code coming soon, broken or unlocatable links, request-code pages, and no-public-repository cases are none_found.",
   "records": {
     "flexiblewm2024": {
       "codeStatus": "none_found",
@@ -279,8 +279,8 @@
       "codeLink": ""
     },
     "lawa2024": {
-      "codeStatus": "none_found",
-      "codeLink": ""
+      "codeStatus": "source_unspecified",
+      "codeLink": "https://github.com/vbdi/LaWa"
     },
     "lvmark2024": {
       "codeStatus": "none_found",
@@ -328,4 +328,3 @@
     }
   }
 }
-

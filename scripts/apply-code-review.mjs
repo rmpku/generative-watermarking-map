@@ -7,6 +7,7 @@ const review = JSON.parse(readFileSync(reviewPath, "utf8"));
 const records = review.records || {};
 
 const pending = papers.filter((paper) => paper.inCore && paper.codeStatus === "unverified");
+const reviewed = papers.filter((paper) => paper.inCore && records[paper.id]);
 const missing = pending.filter((paper) => !records[paper.id]);
 if (missing.length) {
   throw new Error("No code-review record for: " + missing.map((paper) => paper.id).join(", "));
@@ -29,4 +30,4 @@ if (remaining.length) {
 }
 
 writeFileSync(papersPath, JSON.stringify(updated, null, 2) + "\n");
-console.log("Applied " + pending.length + " code-review decisions to " + papersPath);
+console.log("Applied " + reviewed.length + " code-review decisions to " + papersPath);

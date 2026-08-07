@@ -12,7 +12,7 @@ const I18N = {
     metricPapersNote: "core method papers",
     metricCode: "Public code",
     metricRatio: "Code ratio",
-    metricRatioNote: "official + third-party",
+    metricRatioNote: "official + third-party + source unspecified",
     papersTitle: "Paper index",
     searchLabel: "Search papers",
     searchPlaceholder: "Search title, author, venue...",
@@ -24,7 +24,7 @@ const I18N = {
     allStatuses: "All statuses",
     allLoci: "All watermark loci",
     allMedia: "Image + video",
-    tableLegend: "official + third-party = public code · pending rows are not counted as no code",
+    tableLegend: "official + third-party + source unspecified = public code · no-code rows are separate",
     thYear: "Year",
     thPaper: "Paper / authors",
     thVenue: "Venue",
@@ -39,6 +39,7 @@ const I18N = {
     public: "Public",
     official: "Official",
     thirdParty: "Third-party",
+    sourceUnspecified: "Source unspecified",
     unverified: "Pending review",
     noneFound: "No code",
     papers: "papers"
@@ -56,7 +57,7 @@ const I18N = {
     metricPapersNote: "核心方法论文",
     metricCode: "公开代码",
     metricRatio: "代码比例",
-    metricRatioNote: "官方 + 第三方",
+    metricRatioNote: "官方 + 第三方 + 来源未说明",
     papersTitle: "论文索引",
     searchLabel: "搜索论文",
     searchPlaceholder: "搜索标题、作者、venue...",
@@ -68,7 +69,7 @@ const I18N = {
     allStatuses: "全部状态",
     allLoci: "全部水印位置",
     allMedia: "图像 + 视频",
-    tableLegend: "官方 + 第三方 = 公开代码 · 待核验不等于无代码",
+    tableLegend: "官方 + 第三方 + 来源未说明 = 公开代码 · 无代码单独统计",
     thYear: "年份",
     thPaper: "论文 / 作者",
     thVenue: "发表 venue",
@@ -83,6 +84,7 @@ const I18N = {
     public: "公开",
     official: "官方",
     thirdParty: "第三方",
+    sourceUnspecified: "来源未说明",
     unverified: "待核验",
     noneFound: "无代码",
     papers: "篇论文"
@@ -110,11 +112,11 @@ function metricCount(value) {
 }
 
 function codeLabel(status) {
-  return { official: t("official"), third_party: t("thirdParty"), unverified: t("unverified"), none_found: t("noneFound") }[status] || t("unverified");
+  return { official: t("official"), third_party: t("thirdParty"), source_unspecified: t("sourceUnspecified"), unverified: t("unverified"), none_found: t("noneFound") }[status] || t("unverified");
 }
 
 function codeClass(status) {
-  return { official: "status-official", third_party: "status-third-party", none_found: "status-none" }[status] || "status-unverified";
+  return { official: "status-official", third_party: "status-third-party", source_unspecified: "status-source-unspecified", none_found: "status-none" }[status] || "status-unverified";
 }
 
 function countryLabel(country) {
@@ -159,7 +161,7 @@ function populateFilters() {
   const years = [...new Set(papers.map((paper) => paper.year).filter(Boolean))].sort((a, b) => b - a);
   const loci = [...new Set(papers.map((paper) => paper.locus).filter(Boolean))].sort();
   const modalities = [...new Set(papers.map((paper) => paper.modality).filter(Boolean))].sort();
-  const statuses = ["official", "third_party", "none_found"];
+  const statuses = ["official", "third_party", "source_unspecified", "none_found"];
   $("#yearFilter").innerHTML = makeOption("all", t("allYears"), state.year === "all") + years.map((year) => makeOption(year, year, String(state.year) === String(year))).join("");
   $("#codeFilter").innerHTML = makeOption("all", t("allStatuses"), state.code === "all") + makeOption("public", `${t("public")} code`, state.code === "public") + statuses.map((status) => makeOption(status, codeLabel(status), state.code === status)).join("");
   $("#locusFilter").innerHTML = makeOption("all", t("allLoci"), state.locus === "all") + loci.map((locus) => makeOption(locus, locus, state.locus === locus)).join("");
@@ -172,7 +174,7 @@ function filteredPapers() {
     .filter((paper) => paper.inCore)
     .filter((paper) => !query || [paper.title, paper.authors.join(" "), paper.venue, paper.firstInstitution, paper.firstCountry].join(" ").toLowerCase().includes(query))
     .filter((paper) => state.year === "all" || String(paper.year) === String(state.year))
-    .filter((paper) => state.code === "all" || (state.code === "public" ? ["official", "third_party"].includes(paper.codeStatus) : paper.codeStatus === state.code))
+    .filter((paper) => state.code === "all" || (state.code === "public" ? ["official", "third_party", "source_unspecified"].includes(paper.codeStatus) : paper.codeStatus === state.code))
     .filter((paper) => state.locus === "all" || paper.locus === state.locus)
     .filter((paper) => state.modality === "all" || paper.modality === state.modality)
     .sort((a, b) => (b.year || 0) - (a.year || 0) || a.title.localeCompare(b.title));
@@ -222,10 +224,10 @@ function renderVenueList(core) {
 
 function renderStats() {
   const core = papers.filter((paper) => paper.inCore);
-  const publicCode = core.filter((paper) => ["official", "third_party"].includes(paper.codeStatus));
+  const publicCode = core.filter((paper) => ["official", "third_party", "source_unspecified"].includes(paper.codeStatus));
   $("#metricPapers").innerHTML = metricCount(core.length);
   $("#metricCode").innerHTML = metricCount(publicCode.length);
-  $("#metricCodeNote").textContent = `${core.filter((paper) => paper.codeStatus === "official").length} ${t("official")} · ${core.filter((paper) => paper.codeStatus === "third_party").length} ${t("thirdParty")}`;
+  $("#metricCodeNote").textContent = `${core.filter((paper) => paper.codeStatus === "official").length} ${t("official")} · ${core.filter((paper) => paper.codeStatus === "third_party").length} ${t("thirdParty")} · ${core.filter((paper) => paper.codeStatus === "source_unspecified").length} ${t("sourceUnspecified")}`;
   $("#metricRatio").textContent = percentage(publicCode.length / Math.max(core.length, 1));
   renderYearChart(core);
   renderVenueList(core);
