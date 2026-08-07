@@ -161,7 +161,12 @@ function makeOption(value, label, selected) {
 
 function populateFilters() {
   const years = [...new Set(papers.map((paper) => paper.year).filter(Boolean))].sort((a, b) => b - a);
-  const loci = [...new Set(papers.map((paper) => paper.locus).filter(Boolean))].sort();
+  const loci = [...new Set(papers.map((paper) => paper.locus).filter(Boolean))].sort((left, right) => {
+    if (left === right) return 0;
+    if (left === "Other") return 1;
+    if (right === "Other") return -1;
+    return left.localeCompare(right);
+  });
   const modalities = [...new Set(papers.map((paper) => paper.modality).filter(Boolean))].sort();
   const statuses = ["official", "third_party", "source_unspecified", "none_found"];
   $("#yearFilter").innerHTML = makeOption("all", t("allYears"), state.year === "all") + years.map((year) => makeOption(year, year, String(state.year) === String(year))).join("");

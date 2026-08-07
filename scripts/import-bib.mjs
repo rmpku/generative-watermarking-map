@@ -104,7 +104,6 @@ const LOCUS = new Map([
   ["ringid2024", "Initial noise"], ["cluemark2024", "Initial noise"],
   ["Fernandez2023", "VAE decoder"], ["fsw2024", "Latent"], ["lawa2024", "Latent"],
   ["diffusetrace2024", "Latent"], ["markplugger2024", "Latent"], ["rain2024", "Latent"],
-  ["guidancewm2024", "Trajectory"], ["luminark2024", "Trajectory"],
   ["optmark2024", "Hybrid"], ["maxsive2024", "Hybrid"]
 ]);
 
