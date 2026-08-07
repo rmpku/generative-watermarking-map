@@ -1,0 +1,71 @@
+{
+  "generatedAt": "2026-08-07T08:58:03.770Z",
+  "totalPapers": 94,
+  "publicCodePapers": 13,
+  "publicCodeRatio": 0.13829787234042554,
+  "officialCodePapers": 8,
+  "thirdPartyCodePapers": 5,
+  "metadataCoverage": {
+    "firstInstitution": 0.031914893617021274,
+    "firstCountry": 0.031914893617021274
+  },
+  "byYear": {
+    "2023": 5,
+    "2024": 20,
+    "2025": 43,
+    "2026": 26
+  },
+  "byCountry": {
+    "CN": 1,
+    "SG": 1,
+    "US": 1
+  },
+  "byInstitution": {
+    "National University of Singapore": 1,
+    "University of Maryland": 1,
+    "University of Science and Technology of China": 1
+  },
+  "byVenue": {
+    "Preprint": 32,
+    "ICLR / Learning Representations": 8,
+    "NeurIPS": 7,
+    "IC Machine Learning": 4,
+    "IEEE/CVF Conference on Computer Vision and Pattern Recognition": 4,
+    "AAAI Conference on Artificial Intelligence": 3,
+    "European Conference on Computer Vision": 3,
+    "IEEE Internet of Things Journal": 3,
+    "IEEE Transactions on Multimedia": 3,
+    "IEEE/CVF IC Computer Vision": 3,
+    "IEEE IC Acoustics, Speech and Signal Processing": 2,
+    "IEEE Transactions on Circuits and Systems for Video Technology": 2,
+    "2025 IC Culture-Oriented Science and Technology": 1,
+    "31st ACM IC Multimedia": 1,
+    "32nd ACM IC Multimedia": 1,
+    "33rd ACM IC Multimedia": 1,
+    "6th ACM IC Multimedia in Asia": 1,
+    "ACM Web Conference 2026": 1,
+    "Applied Intelligence": 1,
+    "Expert Systems with Applications": 1,
+    "Frontiers in Physics": 1,
+    "IEEE IC Image Processing": 1,
+    "IEEE International Symposium on Circuits and Systems": 1,
+    "IEEE Transactions on Dependable and Secure Computing": 1,
+    "IEEE/CVF Conference on Computer Vision and Pattern Recognition Workshops": 1,
+    "IEEE/CVF Winter Conference on Applications of Computer Vision": 1,
+    "Information Sciences": 1,
+    "Journal of Information Security and Applications": 1,
+    "Neural Networks": 1,
+    "Neurocomputing": 1,
+    "Transactions on Machine Learning Research": 1,
+    "Web Information Systems Engineering -- WISE 2024": 1
+  },
+  "byCodeStatus": {
+    "unverified": 81,
+    "official": 8,
+    "third_party": 5
+  },
+  "byModality": {
+    "image": 79,
+    "video": 15
+  }
+}

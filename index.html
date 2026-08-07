@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f5f7f3" />
+    <meta name="description" content="A living literature map of blind generative watermarking for diffusion models." />
+    <title>generative-watermarking-map</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#papers">Skip to paper index</a>
+    <div class="ambient-grid" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <div class="header-inner">
+        <a class="brand" href="#map" aria-label="Generative Watermarking Map home">
+          <span class="brand-mark">[gwm]</span>
+          <span>generative-watermarking-map</span>
+        </a>
+        <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#papers" data-i18n="navPapers">Papers</a>
+          <a href="#stats" data-i18n="navStats">Stats</a>
+        </nav>
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">
+          <span class="toggle-dot"></span><span id="languageLabel">中文</span>
+        </button>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero page-section" id="map">
+        <div class="hero-copy">
+          <p class="eyebrow"><span class="signal-dot"></span> FIELD INDEX / DIFFUSION MODELS / 2026</p>
+          <h1 data-i18n="heroTitle">A living map of <em>generative watermarking.</em></h1>
+          <p class="hero-description" data-i18n="heroDescription">
+            A focused, searchable index of blind in-generation watermarking methods for diffusion models — with code, affiliations, venues, and the trail from paper to implementation.
+          </p>
+          <div class="hero-bottomline">
+            <div class="hero-actions">
+              <a class="button button-primary" href="#papers" data-i18n="explorePapers">Explore papers <span>↘</span></a>
+            </div>
+            <div class="hero-note"><span class="mono-label">SOURCE</span> <span data-i18n="sourceNote">A Survey on Blind Generative Watermarking for Diffusion Models (Under review)</span><span class="source-paper-link" role="img" aria-label="Paper link pending" title="Paper link pending">↗</span></div>
+          </div>
+        </div>
+
+      </section>
+
+      <section class="overview-section page-section section-block" id="stats" aria-label="Overview statistics">
+        <div class="overview-head"><span>01 / SIGNALS</span><span data-i18n="statsCaption">Automatically generated from the paper records above.</span></div>
+        <div class="overview-grid">
+          <article class="metric-card metric-primary">
+            <span class="metric-label" data-i18n="metricPapers">Papers indexed</span>
+            <strong id="metricPapers">--</strong>
+            <small data-i18n="metricPapersNote">core method papers</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label" data-i18n="metricCode">Public code</span>
+            <strong id="metricCode">--</strong>
+            <small id="metricCodeNote">--</small>
+          </article>
+          <article class="metric-card">
+            <span class="metric-label" data-i18n="metricRatio">Code ratio</span>
+            <strong id="metricRatio">--</strong>
+            <small data-i18n="metricRatioNote">official + third-party</small>
+          </article>
+          <article class="chart-card compact-year-card">
+            <div class="chart-header"><h3 data-i18n="yearChartTitle">Papers by year</h3><span class="chart-unit">COUNT</span></div>
+            <div class="bar-chart" id="yearChart"></div>
+          </article>
+          <article class="chart-card compact-venue-card">
+            <div class="chart-header"><h3 data-i18n="venueChartTitle">Venues</h3><span class="chart-unit">TOP 06</span></div>
+            <div class="venue-grid" id="venueList"></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="page-section section-block" id="papers">
+        <div class="section-heading">
+          <div>
+            <p class="section-index">02 / INDEX</p>
+            <h2 data-i18n="papersTitle">Paper index</h2>
+          </div>
+        </div>
+
+        <div class="filter-shell">
+          <label class="search-field">
+            <span class="sr-only" data-i18n="searchLabel">Search papers</span>
+            <span class="search-icon">⌕</span>
+            <input id="searchInput" type="search" placeholder="Search title, author, venue..." autocomplete="off" />
+          </label>
+          <label class="select-field"><span data-i18n="yearLabel">Year</span><select id="yearFilter"><option value="all">All years</option></select></label>
+          <label class="select-field"><span data-i18n="codeLabel">Code</span><select id="codeFilter"><option value="all">All statuses</option></select></label>
+          <label class="select-field"><span data-i18n="locusLabel">Watermark locus</span><select id="locusFilter"><option value="all">All watermark loci</option></select></label>
+          <label class="select-field"><span data-i18n="modalityLabel">Media</span><select id="modalityFilter"><option value="all">Image + video</option></select></label>
+        </div>
+
+        <div class="table-meta">
+          <span id="resultCount">--</span>
+          <span class="table-legend"><span class="legend-line"></span><span data-i18n="tableLegend">official and third-party implementations count as public code</span></span>
+        </div>
+
+        <div class="table-wrap">
+          <table class="paper-table">
+            <thead>
+              <tr>
+                <th data-i18n="thYear">Year</th>
+                <th data-i18n="thPaper">Paper / authors</th>
+                <th data-i18n="thVenue">Venue</th>
+                <th data-i18n="thInstitution">First institution</th>
+                <th data-i18n="thCode">Code</th>
+              </tr>
+            </thead>
+            <tbody id="papersBody"></tbody>
+          </table>
+          <div class="table-actions" id="tableActions" hidden>
+            <button class="expand-toggle" id="expandToggle" type="button" aria-controls="papersBody" aria-expanded="false"></button>
+          </div>
+          <div class="empty-state" id="emptyState" hidden>
+            <span>∅</span><p data-i18n="emptyState">No records match this query.</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer">
+      <div><span class="brand-mark">[gwm]</span> generative-watermarking-map</div>
+      <div><span data-i18n="footerText">Built as a living research index · data-first · contribution-friendly</span> <span class="footer-cursor">█</span></div>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>

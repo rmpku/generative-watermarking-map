@@ -1,0 +1,45 @@
+# generative-watermarking-map
+
+> A living literature map of blind generative watermarking for diffusion models.
+
+This project indexes the core method papers collected in the survey
+`A Survey on Blind Generative Watermarking for Diffusion Models`.
+
+## Scope
+
+- Diffusion-model generative watermarking only.
+- Blind detection/extraction methods only; requiring a key, model, prompt, or inversion does not by itself make a method non-blind.
+- Non-diffusion, post-hoc-only, background, metric, dataset, survey, and attack-only papers are outside the core index.
+- One row per research work; duplicate preprint and formal-publication versions are merged.
+- Institution and country statistics use the first author's first listed affiliation.
+
+## Code status
+
+Public code includes both official author implementations and credible third-party implementations. The map keeps the distinction visible:
+
+- `official` — public code from the paper authors or their project page;
+- `third_party` — a public implementation maintained by another group;
+- `unverified` — internal pending-review state; it is not counted as `none_found`;
+- `none_found` — checked, but no public implementation was found.
+
+## Data flow
+
+`data/papers.json` is the source of truth for the static page. The browser computes the visible paper filters and summary charts from that file. The Node scripts are dependency-free:
+
+```bash
+# Import the current survey BibTeX through stdin.
+unzip -p /path/to/survey.zip 'references.bib' | node scripts/import-bib.mjs data/papers.json
+
+# Generate a machine-readable statistics snapshot.
+node scripts/generate-stats.mjs
+```
+
+The root `index.html` is GitHub Pages compatible and has no runtime dependency.
+
+## Bilingual interface
+
+The default interface is English. Use the `中文` toggle in the header to switch the interface language. Paper titles, authors, venues, and institution names remain in their original English form.
+
+## Contributing
+
+When adding a record, preserve the BibTeX key, use one row per research work, link the paper and code, and record whether the code is official or third-party. Do not guess missing affiliations or repositories; use `unverified` until checked.
