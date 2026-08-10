@@ -24,8 +24,10 @@ const countBy = (items, getter) => Object.fromEntries(
 
 const core = papers.filter((paper) => paper.inCore);
 const codeOpen = core.filter((paper) => publicCodeStatuses.has(paper.codeStatus));
-const verifiedUnits = core.filter((paper) => paper.firstInstitution !== "Unverified");
-const verifiedCountries = core.filter((paper) => paper.firstCountry !== "Unverified");
+const isNamed = (value) => value && !["Unverified", "Anonymous"].includes(value);
+const verifiedUnits = core.filter((paper) => isNamed(paper.firstInstitution));
+const verifiedCountries = core.filter((paper) => isNamed(paper.firstCountry));
+const anonymousInstitutionPapers = core.filter((paper) => paper.firstInstitution === "Anonymous");
 
 const stats = {
   generatedAt: new Date().toISOString(),
@@ -36,7 +38,8 @@ const stats = {
   thirdPartyCodePapers: core.filter((paper) => paper.codeStatus === "third_party").length,
   metadataCoverage: {
     firstInstitution: core.length ? verifiedUnits.length / core.length : 0,
-    firstCountry: core.length ? verifiedCountries.length / core.length : 0
+    firstCountry: core.length ? verifiedCountries.length / core.length : 0,
+    anonymousInstitution: core.length ? anonymousInstitutionPapers.length / core.length : 0
   },
   byYear: countBy(core, (paper) => paper.year),
   byCountry: countBy(verifiedCountries, (paper) => paper.firstCountry),

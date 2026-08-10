@@ -98,6 +98,8 @@ const OVERRIDES = {
   }
 };
 
+const AFFILIATIONS = JSON.parse(readFileSync(new URL("../data/affiliations.json", import.meta.url), "utf8"));
+
 const LOCUS = new Map([
   ["Wen2023", "Initial noise"], ["Yang2024", "Initial noise"],
   ["yang2024gaussianshadingpp", "Initial noise"], ["gshannon2024", "Initial noise"],
@@ -166,7 +168,7 @@ const papers = CORE_KEYS
     const entry = byKey.get(key);
     const title = field(entry.body, "title");
     const authors = parseAuthors(field(entry.body, "author"));
-    const override = OVERRIDES[key] || {};
+    const override = { ...(AFFILIATIONS[key.toLowerCase()] || {}), ...(OVERRIDES[key] || {}) };
     const reviewedCode = codeReview.records[key.toLowerCase()] || {};
     const previous = previousById.get(key.toLowerCase()) || {};
     return {

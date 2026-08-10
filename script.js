@@ -126,7 +126,19 @@ function countryLabel(country) {
   const names = {
     CN: state.lang === "zh" ? "中国" : "China",
     US: state.lang === "zh" ? "美国" : "USA",
-    SG: state.lang === "zh" ? "新加坡" : "Singapore"
+    SG: state.lang === "zh" ? "新加坡" : "Singapore",
+    AU: state.lang === "zh" ? "澳大利亚" : "Australia",
+    KR: state.lang === "zh" ? "韩国" : "South Korea",
+    DE: state.lang === "zh" ? "德国" : "Germany",
+    FR: state.lang === "zh" ? "法国" : "France",
+    IE: state.lang === "zh" ? "爱尔兰" : "Ireland",
+    CA: state.lang === "zh" ? "加拿大" : "Canada",
+    IL: state.lang === "zh" ? "以色列" : "Israel",
+    TW: state.lang === "zh" ? "中国台湾" : "Taiwan",
+    HK: state.lang === "zh" ? "中国香港" : "Hong Kong",
+    MO: state.lang === "zh" ? "中国澳门" : "Macau",
+    AE: state.lang === "zh" ? "阿联酋" : "UAE",
+    RU: state.lang === "zh" ? "俄罗斯" : "Russia"
   };
   return names[country] || country;
 }

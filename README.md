@@ -13,6 +13,10 @@ This project indexes the core method papers collected in the survey
 - One row per research work; duplicate preprint and formal-publication versions are merged.
 - Institution and country statistics use the first author's first listed affiliation.
 
+The first-author affiliation audit is maintained in `data/affiliations.json`. Four double-blind
+submission records explicitly withhold affiliations and are therefore labeled `Anonymous`; no
+institution is inferred from an author's personal profile for those rows.
+
 ## Code status
 
 Public code includes official, third-party, and source-unspecified implementations. The map keeps the distinction visible:
@@ -42,6 +46,9 @@ node scripts/generate-stats.mjs
 
 # Apply the latest reviewed code-status decisions to the paper database.
 node scripts/apply-code-review.mjs
+
+# Apply the reviewed first-author affiliation metadata to the paper database.
+node scripts/apply-affiliations.mjs
 ```
 
 The root `index.html` is GitHub Pages compatible and has no runtime dependency.
