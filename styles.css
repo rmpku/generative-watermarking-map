@@ -115,6 +115,9 @@ h1, h2, h3, p { margin-top: 0; }
 h1 { margin-bottom: 26px; font-family: var(--mono); font-size: clamp(42px, 4.4vw, 58px); font-weight: 500; line-height: 1.03; letter-spacing: -0.08em; }
 h1 em { color: var(--green); font-style: normal; }
 .hero-description { max-width: none; margin-bottom: 34px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+.hero-star-note { margin: -18px 0 28px; color: var(--green); font: 11px/1.6 var(--mono); }
+.hero-star-note a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.hero-star-note a:hover { color: var(--text); }
 .hero-bottomline { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 0; }
 .button { display: inline-flex; align-items: center; gap: 18px; min-height: 42px; padding: 0 16px; border: 1px solid var(--line-bright); font-family: var(--mono); font-size: 11px; letter-spacing: 0.05em; text-transform: uppercase; transition: transform 160ms ease, border-color 160ms ease, color 160ms ease, background 160ms ease; }
