@@ -3,7 +3,7 @@ const I18N = {
     navPapers: "Papers",
     navStats: "Stats",
     heroTitle: "A living map of <em>generative watermarking.</em>",
-    heroDescription: "A focused, searchable index of blind in-generation watermarking methods for diffusion models — with code, affiliations, venues, and the trail from paper to implementation.",
+    heroDescription: "A focused, searchable index of blind in-generation watermarking methods for <strong>diffusion models</strong> — with code, affiliations, venues, and the trail from paper to implementation.",
     starNote: "If this map helps your research, please <a href=\"https://github.com/rmpku/generative-watermarking-map\" target=\"_blank\" rel=\"noreferrer\">star the project</a> and support our papers.",
     explorePapers: "Explore papers <span>↘</span>",
     sourceNote: "A Survey on Blind Generative Watermarking for Diffusion Models (Under review)",
