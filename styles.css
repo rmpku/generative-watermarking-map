@@ -116,7 +116,7 @@ h1 { margin-bottom: 26px; font-family: var(--mono); font-size: clamp(42px, 4.4vw
 h1 em { color: var(--green); font-style: normal; }
 .hero-description { max-width: none; margin-bottom: 34px; color: var(--muted); font-size: 15px; line-height: 1.7; }
 .hero-star-note { margin: -18px 0 28px; color: var(--green); font: 11px/1.6 var(--mono); }
-.hero-star-note a { color: inherit; text-decoration: underline; text-underline-offset: 3px; }
+.hero-star-note a { color: var(--cyan); font-weight: 700; text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 3px; }
 .hero-star-note a:hover { color: var(--text); }
 .hero-bottomline { display: flex; flex-wrap: wrap; align-items: center; gap: 20px; }
 .hero-actions { display: flex; flex-wrap: wrap; gap: 12px; margin-bottom: 0; }
