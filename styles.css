@@ -206,10 +206,6 @@ h2 { margin-bottom: 0; font: 500 clamp(28px, 4vw, 45px)/1 var(--mono); letter-sp
 .code-link { display: inline-flex; align-items: center; gap: 7px; margin-top: 7px; color: var(--muted); font: 12px var(--mono); }
 .code-link-arrow { font: 700 15px/0.8 var(--sans); }
 .code-link:hover { color: var(--green); }
-.citation-cell { min-width: 94px; color: var(--text); font: 11px var(--mono); white-space: nowrap; }
-.citation-value { color: var(--green); font: 700 12px var(--mono); }
-.citation-value:hover { color: var(--cyan); }
-.citation-arrow { margin-left: 5px; font: 700 13px/0.8 var(--sans); }
 .status-pill { display: inline-flex; align-items: center; width: fit-content; padding: 4px 7px; border: 1px solid var(--line-bright); font: 9px var(--mono); white-space: nowrap; }
 .status-official { color: var(--green); border-color: rgba(8, 116, 67, 0.35); background: rgba(8, 116, 67, 0.06); }
 .status-third-party { color: var(--cyan); border-color: rgba(8, 114, 122, 0.35); background: rgba(8, 114, 122, 0.05); }
