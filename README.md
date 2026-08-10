@@ -9,5 +9,3 @@
 <p align="center">
   <strong>🌐 The research map lives on the homepage</strong>
 </p>
-
-The public interface is the homepage above. This repository contains its static source, paper data, and update scripts.
