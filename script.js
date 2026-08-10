@@ -49,7 +49,7 @@ const I18N = {
     navPapers: "论文",
     navStats: "统计",
     heroTitle: "生成式水印的 <em>持续更新文献库。</em>",
-    heroDescription: "面向基于扩散模型盲水印方法的可检索论文索引，记录代码、单位、venue，以及从论文到实现的路径。",
+    heroDescription: "面向扩散模型盲水印方法的可检索论文索引，记录代码、单位、venue，以及从论文到实现的路径。",
     starNote: "如果这个文献库对您的研究有帮助，欢迎 <a href=\"https://github.com/rmpku/generative-watermarking-map\" target=\"_blank\" rel=\"noreferrer\">Star 我们的项目</a>，也欢迎关注我们的论文。",
     explorePapers: "浏览论文 <span>↘</span>",
     sourceNote: "A Survey on Blind Generative Watermarking for Diffusion Models (Under review)",
