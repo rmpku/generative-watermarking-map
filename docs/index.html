@@ -7,7 +7,7 @@
     <meta name="description" content="Figures from the LocWM survey and a searchable index of blind generative watermarking methods for diffusion models." />
     <meta property="og:title" content="LocWM: A Survey on Blind Generative Watermarking for Diffusion Models" />
     <title>LocWM: A Survey on Blind Generative Watermarking for Diffusion Models</title>
-    <link rel="stylesheet" href="styles.css?v=locwm-survey" />
+    <link rel="stylesheet" href="styles.css?v=locwm-layout" />
   </head>
   <body>
     <a class="skip-link" href="#papers">Skip to paper index</a>
@@ -34,7 +34,7 @@
       <section class="hero page-section" id="map">
         <div class="hero-copy">
           <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span><span data-i18n="surveyStatus">Survey · Under review</span></p>
-          <h1 id="surveyTitle" data-i18n="heroTitle"><em>LocWM:</em> A Survey on Blind Generative Watermarking for Diffusion Models</h1>
+          <h1 id="surveyTitle" data-i18n="heroTitle"><em>LocWM:</em> A Survey on <span class="survey-topic">Blind Generative Watermarking for Diffusion Models</span></h1>
           <p class="hero-description" data-i18n="heroDescription">
             LocWM maps where watermarks enter the diffusion pipeline and how those choices shape recovery. Browse figures from the survey and search the literature index for papers and code.
           </p>
@@ -58,7 +58,7 @@
             </a>
             <figcaption>
               <h3 data-i18n="taxonomyTitle">Where watermarks are embedded</h3>
-              <p data-i18n="taxonomyCaption">The four families target the training dataset, latent states, the denoising network, or the VAE decoder. Latent methods act on initial noise, intermediate sampling states, or the final latent.</p>
+              <p data-i18n="taxonomyCaption">Four families target <strong>training data, latent states, the denoiser, and the VAE decoder</strong>.</p>
             </figcaption>
           </figure>
 
@@ -69,7 +69,7 @@
             </a>
             <figcaption>
               <h3 data-i18n="pipelineTitle">From training data to rendered image</h3>
-              <p data-i18n="pipelineCaption">Follow the diffusion pipeline from training data and initial noise to the denoiser, final latent, and VAE decoder. A separate path shows how post-hoc methods mark an already rendered image.</p>
+              <p data-i18n="pipelineCaption">Watermarks can be added <strong>during generation</strong> or <strong>after rendering</strong>.</p>
             </figcaption>
           </figure>
 
@@ -80,7 +80,7 @@
             </a>
             <figcaption>
               <h3 data-i18n="timelineTitle">Watermarking milestones, 2017–2026</h3>
-              <p data-i18n="timelineCaption">Selected papers trace the field from learned image watermarking to generative methods. Each year reflects the version cited in the survey.</p>
+              <p data-i18n="timelineCaption">Selected milestones from <strong>learned image watermarking</strong> to <strong>generative watermarking</strong>.</p>
             </figcaption>
           </figure>
 
@@ -91,7 +91,7 @@
             </a>
             <figcaption>
               <h3 data-i18n="experimentTitle">Payload, recovery, and image diversity</h3>
-              <p data-i18n="experimentCaption">The SD2.1-base experiment measures bit recovery under Gaussian noise and compares within-prompt diversity against unmarked outputs using the same seeds. Watermark identity is held fixed within each prompt. Recovery accuracy uses returned messages. At 512 bits, PRC returned 101 of 128 messages.</p>
+              <p data-i18n="experimentCaption">Across payload sizes, compare <strong>bit recovery under noise</strong> and <strong>within-prompt diversity at fixed watermark identity</strong>.</p>
             </figcaption>
           </figure>
         </div>
@@ -181,6 +181,6 @@
       <div><span data-i18n="footerText">Built as a living research index</span> <span class="footer-cursor">█</span></div>
     </footer>
 
-    <script src="script.js?v=locwm-survey" defer></script>
+    <script src="script.js?v=locwm-layout" defer></script>
   </body>
 </html>

@@ -4,7 +4,7 @@ const I18N = {
     navPapers: "Papers",
     navStats: "Stats",
     surveyStatus: "Survey · Under review",
-    heroTitle: "<em>LocWM:</em> A Survey on Blind Generative Watermarking for Diffusion Models",
+    heroTitle: "<em>LocWM:</em> A Survey on <span class=\"survey-topic\">Blind Generative Watermarking for Diffusion Models</span>",
     heroDescription: "LocWM maps where watermarks enter the diffusion pipeline and how those choices shape recovery. Browse figures from the survey and search the literature index for papers and code.",
     starNote: "If this map helps your research, please <a href=\"https://github.com/rmpku/generative-watermarking-map\" target=\"_blank\" rel=\"noreferrer\">star the project</a> and support our papers",
     explorePapers: "Explore papers",
@@ -12,16 +12,16 @@ const I18N = {
     figuresTitle: "Survey figures",
     openFigure: "Open full-size figure",
     taxonomyTitle: "Where watermarks are embedded",
-    taxonomyCaption: "The four families target the training dataset, latent states, the denoising network, or the VAE decoder. Latent methods act on initial noise, intermediate sampling states, or the final latent.",
+    taxonomyCaption: "Four families target <strong>training data, latent states, the denoiser, and the VAE decoder</strong>.",
     taxonomyAlt: "Tree of watermark embedding loci with four primary families and a hybrid branch.",
     pipelineTitle: "From training data to rendered image",
-    pipelineCaption: "Follow the diffusion pipeline from training data and initial noise to the denoiser, final latent, and VAE decoder. A separate path shows how post-hoc methods mark an already rendered image.",
+    pipelineCaption: "Watermarks can be added <strong>during generation</strong> or <strong>after rendering</strong>.",
     pipelineAlt: "Diffusion pipeline with representative watermarking methods marked at the stages they modify.",
     timelineTitle: "Watermarking milestones, 2017–2026",
-    timelineCaption: "Selected papers trace the field from learned image watermarking to generative methods. Each year reflects the version cited in the survey.",
+    timelineCaption: "Selected milestones from <strong>learned image watermarking</strong> to <strong>generative watermarking</strong>.",
     timelineAlt: "Timeline from 2017 to 2026 with color-coded milestones for conventional learned methods, generative methods, and surveys.",
     experimentTitle: "Payload, recovery, and image diversity",
-    experimentCaption: "The SD2.1-base experiment measures bit recovery under Gaussian noise and compares within-prompt diversity against unmarked outputs using the same seeds. Watermark identity is held fixed within each prompt. Recovery accuracy uses returned messages. At 512 bits, PRC returned 101 of 128 messages.",
+    experimentCaption: "Across payload sizes, compare <strong>bit recovery under noise</strong> and <strong>within-prompt diversity at fixed watermark identity</strong>.",
     experimentAlt: "Three plots track recovery under noise, perceptual diversity, and semantic diversity as payload increases.",
     expandPapers: "Show all",
     collapsePapers: "Show first 3",
@@ -74,16 +74,16 @@ const I18N = {
     figuresTitle: "综述图表",
     openFigure: "查看高清图",
     taxonomyTitle: "按嵌入位置划分水印方法",
-    taxonomyCaption: "四类方法分别作用于训练数据集、潜空间、去噪网络或 VAE 解码器。潜空间方法进一步按采样阶段划分为初始噪声、中间状态和最终潜变量。",
+    taxonomyCaption: "四类方法分别作用于<strong>训练数据、潜空间、去噪网络和 VAE 解码器</strong>。",
     taxonomyAlt: "水印嵌入位置分类树，包含四个主要类别和一个混合分支。",
     pipelineTitle: "从训练数据到生成图像",
-    pipelineCaption: "图中标出了训练数据、初始噪声、去噪网络、最终潜变量和 VAE 解码器等水印嵌入位置。右侧展示在图像生成后添加水印的路径。",
+    pipelineCaption: "水印可在<strong>生成过程中</strong>嵌入，也可在<strong>图像生成后</strong>添加。",
     pipelineAlt: "扩散生成流程示意图，标出代表性水印方法及其作用阶段。",
     timelineTitle: "水印研究的演进（2017–2026）",
-    timelineCaption: "时间线选取代表性论文，回顾从学习式图像水印到生成式水印的发展。年份以综述引用的论文版本为准。",
+    timelineCaption: "从<strong>学习式图像水印</strong>到<strong>生成式水印</strong>的代表性工作。",
     timelineAlt: "2017 至 2026 年水印研究时间线，以颜色区分传统学习式方法、生成式方法和综述。",
     experimentTitle: "水印容量、恢复与图像多样性",
-    experimentCaption: "实验在 SD2.1-base 上测量高斯噪声下的比特恢复率，并用相同种子生成的无水印图像作为参照，比较同一提示词下的图像多样性。每个提示词内固定水印身份。比特准确率按成功返回的消息计算，在 512 比特容量下，PRC 从 128 张图像中成功返回了 101 条消息。",
+    experimentCaption: "比较不同容量下的<strong>抗噪比特恢复率</strong>和<strong>固定水印身份时同一提示词下的图像多样性</strong>。",
     experimentAlt: "三张曲线图展示随水印容量变化的噪声下恢复表现、感知多样性和语义多样性。",
     expandPapers: "展开全部",
     collapsePapers: "折叠到前 3 篇",
@@ -125,7 +125,7 @@ const I18N = {
   }
 };
 
-const state = { lang: "en", query: "", year: "all", code: "all", locus: "all", modality: "all", expanded: false };
+const state = { lang: "en", query: "", year: "all", code: "all", locus: "all", modality: "all", expanded: true };
 let papers = [];
 
 const $ = (selector) => document.querySelector(selector);
@@ -291,8 +291,8 @@ function renderAll() { renderPapers(); renderStats(); }
 
 function bind() {
   $("#languageToggle").addEventListener("click", () => { state.lang = state.lang === "en" ? "zh" : "en"; applyLanguage(); });
-  $("#searchInput").addEventListener("input", (event) => { state.query = event.target.value; state.expanded = false; renderPapers(); });
-  [["#yearFilter", "year"], ["#codeFilter", "code"], ["#locusFilter", "locus"], ["#modalityFilter", "modality"]].forEach(([selector, key]) => $(selector).addEventListener("change", (event) => { state[key] = event.target.value; state.expanded = false; renderPapers(); }));
+  $("#searchInput").addEventListener("input", (event) => { state.query = event.target.value; renderPapers(); });
+  [["#yearFilter", "year"], ["#codeFilter", "code"], ["#locusFilter", "locus"], ["#modalityFilter", "modality"]].forEach(([selector, key]) => $(selector).addEventListener("change", (event) => { state[key] = event.target.value; renderPapers(); }));
   $("#expandToggle").addEventListener("click", () => { state.expanded = !state.expanded; renderPapers(); });
 }
 
