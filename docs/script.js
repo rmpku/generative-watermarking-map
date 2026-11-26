@@ -4,7 +4,7 @@ const I18N = {
     navPapers: "Papers",
     navStats: "Stats",
     surveyStatus: "Survey · Under review",
-    heroTitle: "<em>LocWM:</em> A Survey on <span class=\"survey-topic\">Blind Generative Watermarking for Diffusion Models</span>",
+    heroTitle: "<em>LocWM:</em> A Survey on Blind Generative Watermarking <span class=\"survey-title-ending\">for Diffusion Models</span>",
     heroDescription: "LocWM maps where watermarks enter the diffusion pipeline and how those choices shape recovery. Browse figures from the survey and search the literature index for papers and code.",
     starNote: "If this map helps your research, please <a href=\"https://github.com/rmpku/generative-watermarking-map\" target=\"_blank\" rel=\"noreferrer\">star the project</a> and support our papers",
     explorePapers: "Explore papers",

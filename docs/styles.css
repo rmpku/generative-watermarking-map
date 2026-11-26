@@ -289,7 +289,7 @@ h2 { margin-bottom: 0; font: 500 clamp(28px, 4vw, 45px)/1 var(--mono); letter-sp
 @keyframes blink { 50% { opacity: 0; } }
 
 @media (min-width: 1000px) {
-  .survey-topic { display: block; }
+  .survey-title-ending { display: block; }
 }
 
 @media (max-width: 960px) {
