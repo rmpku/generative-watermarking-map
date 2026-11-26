@@ -1,12 +1,28 @@
 const I18N = {
   en: {
+    navFigures: "Survey figures",
     navPapers: "Papers",
     navStats: "Stats",
-    heroTitle: "A living map of <em>generative watermarking</em>",
-    heroDescription: "A focused, searchable index of blind in-generation watermarking methods for <strong>diffusion models</strong> — with code, affiliations, venues, and the trail from paper to implementation",
+    surveyStatus: "Survey · Under review",
+    heroTitle: "<em>LocWM:</em> A Survey on Blind Generative Watermarking for Diffusion Models",
+    heroDescription: "LocWM maps where watermarks enter the diffusion pipeline and how those choices shape recovery. Browse figures from the survey and search the literature index for papers and code.",
     starNote: "If this map helps your research, please <a href=\"https://github.com/rmpku/generative-watermarking-map\" target=\"_blank\" rel=\"noreferrer\">star the project</a> and support our papers",
-    explorePapers: "Explore papers <span>↘</span>",
-    sourceNote: "A Survey on Blind Generative Watermarking for Diffusion Models (Under review)",
+    explorePapers: "Explore papers",
+    exploreFigures: "View survey figures",
+    figuresTitle: "Survey figures",
+    openFigure: "Open full-size figure",
+    taxonomyTitle: "Where watermarks are embedded",
+    taxonomyCaption: "The four families target the training dataset, latent states, the denoising network, or the VAE decoder. Latent methods act on initial noise, intermediate sampling states, or the final latent.",
+    taxonomyAlt: "Tree of watermark embedding loci with four primary families and a hybrid branch.",
+    pipelineTitle: "From training data to rendered image",
+    pipelineCaption: "Follow the diffusion pipeline from training data and initial noise to the denoiser, final latent, and VAE decoder. A separate path shows how post-hoc methods mark an already rendered image.",
+    pipelineAlt: "Diffusion pipeline with representative watermarking methods marked at the stages they modify.",
+    timelineTitle: "Watermarking milestones, 2017–2026",
+    timelineCaption: "Selected papers trace the field from learned image watermarking to generative methods. Each year reflects the version cited in the survey.",
+    timelineAlt: "Timeline from 2017 to 2026 with color-coded milestones for conventional learned methods, generative methods, and surveys.",
+    experimentTitle: "Payload, recovery, and image diversity",
+    experimentCaption: "The SD2.1-base experiment measures bit recovery under Gaussian noise and compares within-prompt diversity against unmarked outputs using the same seeds. Watermark identity is held fixed within each prompt. Recovery accuracy uses returned messages. At 512 bits, PRC returned 101 of 128 messages.",
+    experimentAlt: "Three plots track recovery under noise, perceptual diversity, and semantic diversity as payload increases.",
     expandPapers: "Show all",
     collapsePapers: "Show first 3",
     metricPapers: "Papers indexed",
@@ -46,13 +62,29 @@ const I18N = {
     papers: "papers"
   },
   zh: {
+    navFigures: "综述图表",
     navPapers: "论文",
     navStats: "统计",
-    heroTitle: "生成式水印的 <em>持续更新文献库</em>",
-    heroDescription: "面向扩散模型盲水印方法的可检索论文索引，记录代码、单位、venue，以及从论文到实现的路径",
+    surveyStatus: "综述 · 审稿中",
+    heroTitle: "<em>LocWM：</em>扩散模型盲生成式水印综述",
+    heroDescription: "LocWM 梳理水印在扩散模型中的嵌入位置，以及这些位置如何影响水印恢复。可浏览综述图表，也可在文献索引中检索论文和代码。",
     starNote: "如果这个文献库对您的研究有帮助，欢迎 <a href=\"https://github.com/rmpku/generative-watermarking-map\" target=\"_blank\" rel=\"noreferrer\">Star 我们的项目</a>，也欢迎关注我们的论文",
-    explorePapers: "浏览论文 <span>↘</span>",
-    sourceNote: "A Survey on Blind Generative Watermarking for Diffusion Models (Under review)",
+    explorePapers: "浏览论文",
+    exploreFigures: "查看综述图表",
+    figuresTitle: "综述图表",
+    openFigure: "查看高清图",
+    taxonomyTitle: "按嵌入位置划分水印方法",
+    taxonomyCaption: "四类方法分别作用于训练数据集、潜空间、去噪网络或 VAE 解码器。潜空间方法进一步按采样阶段划分为初始噪声、中间状态和最终潜变量。",
+    taxonomyAlt: "水印嵌入位置分类树，包含四个主要类别和一个混合分支。",
+    pipelineTitle: "从训练数据到生成图像",
+    pipelineCaption: "图中标出了训练数据、初始噪声、去噪网络、最终潜变量和 VAE 解码器等水印嵌入位置。右侧展示在图像生成后添加水印的路径。",
+    pipelineAlt: "扩散生成流程示意图，标出代表性水印方法及其作用阶段。",
+    timelineTitle: "水印研究的演进（2017–2026）",
+    timelineCaption: "时间线选取代表性论文，回顾从学习式图像水印到生成式水印的发展。年份以综述引用的论文版本为准。",
+    timelineAlt: "2017 至 2026 年水印研究时间线，以颜色区分传统学习式方法、生成式方法和综述。",
+    experimentTitle: "水印容量、恢复与图像多样性",
+    experimentCaption: "实验在 SD2.1-base 上测量高斯噪声下的比特恢复率，并用相同种子生成的无水印图像作为参照，比较同一提示词下的图像多样性。每个提示词内固定水印身份。比特准确率按成功返回的消息计算，在 512 比特容量下，PRC 从 128 张图像中成功返回了 101 条消息。",
+    experimentAlt: "三张曲线图展示随水印容量变化的噪声下恢复表现、感知多样性和语义多样性。",
     expandPapers: "展开全部",
     collapsePapers: "折叠到前 3 篇",
     metricPapers: "收录论文",
@@ -161,7 +193,10 @@ function safeHref(value) {
 function applyLanguage() {
   document.documentElement.lang = state.lang === "zh" ? "zh-CN" : "en";
   $$('[data-i18n]').forEach((element) => { element.innerHTML = t(element.dataset.i18n); });
+  $$('[data-i18n-alt]').forEach((image) => { image.alt = t(image.dataset.i18nAlt); });
+  document.title = $("#surveyTitle").textContent;
   $("#languageLabel").textContent = state.lang === "en" ? "中文" : "EN";
+  $("#languageToggle").setAttribute("aria-label", state.lang === "en" ? "Switch to Chinese" : "切换到英文");
   $("#searchInput").placeholder = t("searchPlaceholder");
   populateFilters();
   renderAll();

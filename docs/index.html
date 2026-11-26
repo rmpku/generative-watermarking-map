@@ -4,9 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="theme-color" content="#f5f7f3" />
-    <meta name="description" content="A living literature map of blind generative watermarking for diffusion models." />
-    <title>Generative-Watermarking-Map</title>
-    <link rel="stylesheet" href="styles.css?v=star-highlight-3" />
+    <meta name="description" content="Figures from the LocWM survey and a searchable index of blind generative watermarking methods for diffusion models." />
+    <meta property="og:title" content="LocWM: A Survey on Blind Generative Watermarking for Diffusion Models" />
+    <title>LocWM: A Survey on Blind Generative Watermarking for Diffusion Models</title>
+    <link rel="stylesheet" href="styles.css?v=locwm-survey" />
   </head>
   <body>
     <a class="skip-link" href="#papers">Skip to paper index</a>
@@ -19,10 +20,11 @@
           <span>Generative-Watermarking-Map</span>
         </a>
         <nav class="nav-links" aria-label="Primary navigation">
+          <a href="#figures" data-i18n="navFigures">Survey figures</a>
           <a href="#papers" data-i18n="navPapers">Papers</a>
           <a href="#stats" data-i18n="navStats">Stats</a>
         </nav>
-        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch language">
+        <button class="language-toggle" id="languageToggle" type="button" aria-label="Switch to Chinese">
           <span class="toggle-dot"></span><span id="languageLabel">中文</span>
         </button>
       </div>
@@ -31,24 +33,73 @@
     <main>
       <section class="hero page-section" id="map">
         <div class="hero-copy">
-          <p class="eyebrow"><span class="signal-dot"></span> FIELD INDEX / DIFFUSION MODELS / 2026</p>
-          <h1 data-i18n="heroTitle">A living map of <em>generative watermarking</em></h1>
+          <p class="eyebrow"><span class="signal-dot" aria-hidden="true"></span><span data-i18n="surveyStatus">Survey · Under review</span></p>
+          <h1 id="surveyTitle" data-i18n="heroTitle"><em>LocWM:</em> A Survey on Blind Generative Watermarking for Diffusion Models</h1>
           <p class="hero-description" data-i18n="heroDescription">
-            A focused, searchable index of blind in-generation watermarking methods for <strong>diffusion models</strong> — with code, affiliations, venues, and the trail from paper to implementation
+            LocWM maps where watermarks enter the diffusion pipeline and how those choices shape recovery. Browse figures from the survey and search the literature index for papers and code.
           </p>
           <p class="hero-star-note" data-i18n="starNote">If this map helps your research, please <a href="https://github.com/rmpku/generative-watermarking-map" target="_blank" rel="noreferrer">star the project</a> and support our papers</p>
-          <div class="hero-bottomline">
-            <div class="hero-actions">
-              <a class="button button-primary" href="#papers" data-i18n="explorePapers">Explore papers <span>↘</span></a>
-            </div>
-            <div class="hero-note"><span class="mono-label">SOURCE</span> <span data-i18n="sourceNote">A Survey on Blind Generative Watermarking for Diffusion Models (Under review)</span><span class="source-paper-link" role="img" aria-label="Paper link pending" title="Paper link pending">↗</span></div>
+          <div class="hero-actions">
+            <a class="button button-primary" href="#papers" data-i18n="explorePapers">Explore papers</a>
+            <a class="button button-ghost" href="#figures" data-i18n="exploreFigures">View survey figures</a>
           </div>
+        </div>
+      </section>
+
+      <section class="figures-section page-section section-block" id="figures" aria-labelledby="figuresTitle">
+        <div class="section-heading">
+          <h2 id="figuresTitle" data-i18n="figuresTitle">Survey figures</h2>
+        </div>
+        <div class="figure-grid">
+          <figure class="survey-figure survey-figure-featured">
+            <a class="figure-link" href="assets/locwm/embedding-taxonomy.webp" target="_blank" rel="noopener">
+              <img src="assets/locwm/embedding-taxonomy.webp" width="3592" height="928" decoding="async" alt="Tree of watermark embedding loci with four primary families and a hybrid branch." data-i18n-alt="taxonomyAlt" />
+              <span data-i18n="openFigure">Open full-size figure</span>
+            </a>
+            <figcaption>
+              <h3 data-i18n="taxonomyTitle">Where watermarks are embedded</h3>
+              <p data-i18n="taxonomyCaption">The four families target the training dataset, latent states, the denoising network, or the VAE decoder. Latent methods act on initial noise, intermediate sampling states, or the final latent.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="survey-figure">
+            <a class="figure-link" href="assets/locwm/generation-pipeline.webp" target="_blank" rel="noopener">
+              <img src="assets/locwm/generation-pipeline.webp" width="3288" height="968" loading="lazy" decoding="async" alt="Diffusion pipeline with representative watermarking methods marked at the stages they modify." data-i18n-alt="pipelineAlt" />
+              <span data-i18n="openFigure">Open full-size figure</span>
+            </a>
+            <figcaption>
+              <h3 data-i18n="pipelineTitle">From training data to rendered image</h3>
+              <p data-i18n="pipelineCaption">Follow the diffusion pipeline from training data and initial noise to the denoiser, final latent, and VAE decoder. A separate path shows how post-hoc methods mark an already rendered image.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="survey-figure">
+            <a class="figure-link" href="assets/locwm/watermarking-timeline.webp" target="_blank" rel="noopener">
+              <img src="assets/locwm/watermarking-timeline.webp" width="2708" height="1216" loading="lazy" decoding="async" alt="Timeline from 2017 to 2026 with color-coded milestones for conventional learned methods, generative methods, and surveys." data-i18n-alt="timelineAlt" />
+              <span data-i18n="openFigure">Open full-size figure</span>
+            </a>
+            <figcaption>
+              <h3 data-i18n="timelineTitle">Watermarking milestones, 2017–2026</h3>
+              <p data-i18n="timelineCaption">Selected papers trace the field from learned image watermarking to generative methods. Each year reflects the version cited in the survey.</p>
+            </figcaption>
+          </figure>
+
+          <figure class="survey-figure survey-figure-wide">
+            <a class="figure-link" href="assets/locwm/capacity-and-diversity.webp" target="_blank" rel="noopener">
+              <img src="assets/locwm/capacity-and-diversity.webp" width="2022" height="690" loading="lazy" decoding="async" alt="Three plots track recovery under noise, perceptual diversity, and semantic diversity as payload increases." data-i18n-alt="experimentAlt" />
+              <span data-i18n="openFigure">Open full-size figure</span>
+            </a>
+            <figcaption>
+              <h3 data-i18n="experimentTitle">Payload, recovery, and image diversity</h3>
+              <p data-i18n="experimentCaption">The SD2.1-base experiment measures bit recovery under Gaussian noise and compares within-prompt diversity against unmarked outputs using the same seeds. Watermark identity is held fixed within each prompt. Recovery accuracy uses returned messages. At 512 bits, PRC returned 101 of 128 messages.</p>
+            </figcaption>
+          </figure>
         </div>
 
       </section>
 
       <section class="overview-section page-section section-block" id="stats" aria-label="Overview statistics">
-        <div class="overview-head"><span>01 / SIGNALS</span><span data-i18n="statsCaption">Automatically generated from the paper records above.</span></div>
+        <div class="overview-head"><span>01 / SIGNALS</span><span data-i18n="statsCaption">Automatically generated from the paper index.</span></div>
         <div class="overview-grid">
           <article class="metric-card metric-primary">
             <span class="metric-label" data-i18n="metricPapers">Papers indexed</span>
@@ -130,6 +181,6 @@
       <div><span data-i18n="footerText">Built as a living research index</span> <span class="footer-cursor">█</span></div>
     </footer>
 
-    <script src="script.js?v=hero-copy-4" defer></script>
+    <script src="script.js?v=locwm-survey" defer></script>
   </body>
 </html>
